@@ -27,6 +27,22 @@ namespace PriorityDispatcher.API.Controllers
             return Ok(new { Message = "Kuyruğa alındı", TaskId = task.Id, DecryptMessage = task.Content });
         }
 
+        [HttpPost("multiple-send")]
+        public IActionResult SendBulk([FromBody] List<NotificationTask> models)
+        {
+            foreach (var model in models)
+            {
+                var task = new NotificationTask
+                {
+                    Id = Guid.NewGuid(),
+                    Content = _encryptionService.Encryption(model.Content),
+                    Priority = model.Priority
+                };
+                _notificationQueue.Enqueue(task);
+            }
+            return Ok($"{models.Count} adet mesaj kuyruğa eklendi.");
+        }
+
         [HttpGet("count")]
         public IActionResult GetQueueCount()
         {
