@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace PriorityDispatcher.Services
+namespace PriorityDispatcher.Services.Encryption
 {
     public class AesEncryptionService : IEncryptionService
     {

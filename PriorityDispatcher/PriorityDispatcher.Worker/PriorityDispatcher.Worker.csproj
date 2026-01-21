@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-PriorityDispatcher.Worker-da1fc914-555e-4e6e-8f08-8879d6593b39</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PriorityDispatcher.Contracts\PriorityDispatcher.Contracts.csproj" />
+    <ProjectReference Include="..\PriorityDispatcher.Services\PriorityDispatcher.Services.csproj" />
+  </ItemGroup>
+</Project>

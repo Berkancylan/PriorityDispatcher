@@ -5,8 +5,5 @@ namespace PriorityDispatcher.Contracts.Interfaces
     {
         string Encryption(string plainText);
         string Decrypt(string cipherText);
-
     }
-    
-
 }

@@ -22,7 +22,7 @@ namespace PriorityDispatcher.API.Controllers
         {
             task.Content = _encryptionService.Encryption(task.Content);
 
-            _notificationQueue.Enqueue(task);
+            _notificationQueue.EnqueueAsync(task);
 
             return Ok(new { Message = "Kuyruğa alındı", TaskId = task.Id, DecryptMessage = task.Content });
         }
@@ -38,7 +38,7 @@ namespace PriorityDispatcher.API.Controllers
                     Content = _encryptionService.Encryption(model.Content),
                     Priority = model.Priority
                 };
-                _notificationQueue.Enqueue(task);
+                _notificationQueue.EnqueueAsync(task);
             }
             return Ok($"{models.Count} adet mesaj kuyruğa eklendi.");
         }

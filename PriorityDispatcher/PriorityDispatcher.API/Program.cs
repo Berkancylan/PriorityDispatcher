@@ -1,6 +1,6 @@
 using PriorityDispatcher.Contracts.Interfaces;
-using PriorityDispatcher.Services;
-using PriorityDispatcher.Services.Services;
+using PriorityDispatcher.Services.Encryption;
+using PriorityDispatcher.Services.RabbitMQ;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +10,6 @@ builder.Services.AddControllers();
 
 builder.Services.AddSingleton<IEncryptionService,AesEncryptionService>();
 builder.Services.AddSingleton<INotificationQueueService, NotificationQueueService>();
-builder.Services.AddHostedService<NotificationWorker>();
 
 
 

@@ -1,10 +1,13 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace PriorityDispatcher.Contracts.Enums
 {
     public enum PriorityLevel
     {
-        Low = 0,
-        Medium = 1,
-        High = 2
-    }
+        High = 3, Low = 2, Medium = 1
+    };
 }

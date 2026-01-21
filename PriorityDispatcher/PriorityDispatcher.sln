@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityDispatcher.Contract
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityDispatcher.Services", "PriorityDispatcher.Services\PriorityDispatcher.Services.csproj", "{23379E2B-3EBC-5EDD-2B11-4CF2B0FE19BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityDispatcher.Worker", "PriorityDispatcher.Worker\PriorityDispatcher.Worker.csproj", "{E11926D7-F7D4-46FE-A5FB-25963E6D3505}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{23379E2B-3EBC-5EDD-2B11-4CF2B0FE19BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23379E2B-3EBC-5EDD-2B11-4CF2B0FE19BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23379E2B-3EBC-5EDD-2B11-4CF2B0FE19BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11926D7-F7D4-46FE-A5FB-25963E6D3505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11926D7-F7D4-46FE-A5FB-25963E6D3505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11926D7-F7D4-46FE-A5FB-25963E6D3505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11926D7-F7D4-46FE-A5FB-25963E6D3505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
